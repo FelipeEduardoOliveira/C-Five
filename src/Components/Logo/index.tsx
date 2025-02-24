@@ -3,7 +3,7 @@ import Image from 'next/image';
 export const Logo = () => {
   return (
     <Image
-      src="/icons/logoTipochangedf.png"
+      src="/icons/logoTipoChangedf.png"
       alt="Logo C-five"
       className="w-20 md:ml-5"
       width={88}

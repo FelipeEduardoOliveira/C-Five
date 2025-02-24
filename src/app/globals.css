@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-black: #0a0a0a;
+  --background-blue: #2e7aa2;
+  --foreground: #ededed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-black: #0a0a0a;
+    --background-blue: #2e7aa2;
+    --foreground: #ededed;
+  }
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background-blue);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.parallax-not-fixed {
+  background-size: cover;
+  background-position: center;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

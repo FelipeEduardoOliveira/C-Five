@@ -2,19 +2,35 @@
 
 import React from 'react';
 import { Formik, Field, Form } from 'formik';
-
-const initialValues = {
-  nome: '',
-  telefone: '',
-  email: '',
-  mensagem: '',
-};
-
-const handleSubmit = (values: typeof initialValues) => {
-  console.log(values);
-};
+import { ToastContainer, toast, Bounce } from 'react-toastify';
 
 export default function Contatos() {
+  const initialValues = {
+    nome: '',
+    telefone: '',
+    email: '',
+    mensagem: '',
+  };
+
+  const notfy = () => {
+    toast.success('Contato salvo com sucesso !', {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+      transition: Bounce,
+    });
+  };
+
+  const handleSubmit = (values: typeof initialValues) => {
+    console.log(values);
+    notfy();
+  };
+
   return (
     <div className="w-full max-w-lg mx-auto text-center p-10">
       <h1 className="text-3xl md:text-5xl mb-10">Entre em contato</h1>
@@ -31,7 +47,7 @@ export default function Contatos() {
                 id="nome"
                 name="nome"
                 placeholder="Nome"
-                className="p-2 border border-gray-300 rounded"
+                className="p-2 border border-gray-300 rounded text-black"
               />
             </div>
 
@@ -43,7 +59,7 @@ export default function Contatos() {
                 id="telefone"
                 name="telefone"
                 placeholder="Telefone"
-                className="p-2 border border-gray-300 rounded"
+                className="p-2 border border-gray-300 rounded text-black"
               />
             </div>
 
@@ -56,7 +72,7 @@ export default function Contatos() {
                 name="email"
                 placeholder="Email"
                 type="email"
-                className="p-2 border border-gray-300 rounded"
+                className="p-2 border border-gray-300 rounded text-black"
               />
             </div>
           </div>
@@ -69,7 +85,7 @@ export default function Contatos() {
               name="mensagem"
               placeholder="Mensagem"
               as="textarea"
-              className="p-2 border border-gray-300 rounded h-32"
+              className="p-2 border border-gray-300 rounded text-black h-32"
             />
           </div>
           <button
@@ -80,6 +96,8 @@ export default function Contatos() {
           </button>
         </Form>
       </Formik>
+
+      <ToastContainer />
     </div>
   );
 }

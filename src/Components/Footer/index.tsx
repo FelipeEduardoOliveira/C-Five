@@ -5,8 +5,8 @@ const navigationLink: INavigation[] = [
   { name: 'Página inicial', url: '/', disabled: false },
   { name: 'Sobre nós', url: '/sobre-nos', disabled: false },
   { name: 'Serviços', url: '/servicos', disabled: false },
-  { name: 'Blog', url: '#', disabled: true },
-  { name: 'Contatos', url: '#', disabled: true },
+  // { name: 'Blog', url: '#', disabled: true },
+  { name: 'Contatos', url: '/contatos', disabled: false },
 ];
 
 export const Footer = () => {

@@ -3,7 +3,7 @@ import { INavigation } from '@/Interfaces/navigations';
 
 const navigationLink: INavigation[] = [
   { name: 'Página inicial', url: '/', disabled: false },
-  { name: 'Sobre nós', url: '/sobre-nos', disabled: true },
+  { name: 'Sobre nós', url: '/sobre-nos', disabled: false },
   { name: 'Serviços', url: '/servicos', disabled: false },
   { name: 'Blog', url: '#', disabled: true },
   { name: 'Contatos', url: '#', disabled: true },
@@ -38,13 +38,13 @@ export const Footer = () => {
         </div>
         <div className="mb-4 md:mb-0">
           {/* <p>Contatos:</p> */}
-          <p>Email: contato@exemplo.com</p>
-          <p>Telefone: (11) 1234-5678</p>
+          <p>Email: contato@cfive.com.br</p>
+          <p>Telefone: (11) 94922-7115</p>
         </div>
       </div>
       <div className="text-center mt-4">
         <p>
-          &copy; {new Date().getFullYear()} Sua Empresa. Todos os direitos
+          &copy; {new Date().getFullYear()} C-Five. Todos os direitos
           reservados.
         </p>
       </div>

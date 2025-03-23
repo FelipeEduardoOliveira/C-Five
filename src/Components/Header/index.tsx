@@ -16,7 +16,7 @@ export default function Header() {
 
   const navigationLink: INavigation[] = [
     { name: 'Página inicial', url: '/', disabled: false },
-    { name: 'Sobre nós', url: '/sobre-nos', disabled: true },
+    { name: 'Sobre nós', url: '/sobre-nos', disabled: false },
     { name: 'Serviços', url: '/servicos', disabled: false },
     { name: 'Blog', url: '#', disabled: true },
     { name: 'Contatos', url: '#', disabled: true },

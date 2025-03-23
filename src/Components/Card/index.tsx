@@ -11,7 +11,7 @@ export const Card = (card: ICard) => {
 
   return (
     <div
-      className="flex h-96 justify-start items-start md:items-center md:flex-row flex-col bg-cover bg-center relative p-4 rounded-lg hover:cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out"
+      className="flex h-96 w-full justify-start items-start md:items-center md:flex-row flex-col bg-cover bg-center relative p-4 rounded-lg hover:cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out"
       style={{ backgroundImage: `url(${card.imageBg})` }}
       onClick={redirectCardToCampaing}
     >

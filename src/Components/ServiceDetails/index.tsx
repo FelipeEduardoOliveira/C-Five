@@ -1,7 +1,7 @@
 'use client';
 import { ICard } from '@/Interfaces/card';
 import { useParams } from 'next/navigation';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import campaignsLauch from '@/../public/Imagens/Campanha-lancamento.jpg';
 import campaignsIncentv from '@/../public/Imagens/Campanha-incentivo.jpg';
 import campaignsPromotion from '@/../public/Imagens/Campanha-promocional.jpg';
@@ -9,6 +9,7 @@ import coffeeBreak from '@/../public/Imagens/Coffee-break.jpg';
 import promotor from '@/../public/Imagens/Promotor.jpg';
 import staff from '@/../public/Imagens/staff.jpg';
 import blitz from '@/../public/Imagens/blitz.jpg';
+import ScrollServices from '../ScrollService';
 
 const cardsObjects: ICard[] = [
   {
@@ -57,20 +58,6 @@ export const ServiceDetails = () => {
   const params = useParams();
   const [card, setCard] = useState<ICard | null>(null);
 
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  const scrollLeft = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
-    }
-  };
-
-  const scrollRight = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
-    }
-  };
-
   useEffect(() => {
     window.scrollTo(0, 0);
     if (params.id) {
@@ -101,45 +88,10 @@ export const ServiceDetails = () => {
         </div>
       </div>
 
-      <div className="text-2xl text-center p-8">Nossos seviços</div>
-      <div className="relative w-full p-8">
-        <button
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-          onClick={scrollLeft}
-        >
-          &lt;
-        </button>
-        <div
-          ref={scrollRef}
-          className="overflow-x-scroll flex gap-4 w-full scrollbar-hide snap-x snap-mandatory"
-        >
-          {cardsObjects.map((card, index) => (
-            <div
-              key={index}
-              className="flex h-80 min-w-80 justify-start items-center md:flex-row flex-col bg-cover bg-center relative p-4 rounded-lg hover:cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out snap-center"
-              style={{ backgroundImage: `url(${card.imageBg})` }}
-              onClick={() => {
-                setCard(card);
-                window.scrollTo(0, 0);
-              }}
-            >
-              <div className="absolute inset-0 bg-black opacity-70 rounded-lg"></div>
-              <div className={`relative z-10 text-white gap-5`}>
-                <h1 className="text-2xl">{card.title}</h1>
-                {card.description && (
-                  <p className="text-3xl mt-3">{card.description}</p>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-        <button
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
-          onClick={scrollRight}
-        >
-          &gt;
-        </button>
-      </div>
+      <ScrollServices
+        cardsObjects={cardsObjects}
+        title="Nossos seviços"
+      />
     </div>
   );
 };

@@ -14,12 +14,12 @@ export default function Service() {
     {
       imageBg: campaignsLauch.src,
       title: 'Campanha de lançamento',
-      text: 'É desenvolvida para apresentar e promover um novo produto, serviço ou marca ao público. O objetivo é gerar expectativa, atrair atenção e impulsionar as primeiras vendas ou o engajamento. Criamos um impacto inicial para alcançar o maior número de pessoas.',
+      text: 'É desenvolvida para apresentar e promover um novo produto, serviço ou marca ao público. O objetivo é gerar expectativa; atrair atenção e impulsionar as primeiras vendas ou o engajamento. Criamos um impacto inicial para alcançar o maior número de pessoas.',
     },
     {
       imageBg: campaignsIncentv.src,
       title: 'Campanha de incentivo',
-      text: 'estratégia de marketing ou vendas criada para motivar e recompensar comportamentos específicos de um público-alvo, como funcionários, vendedores ou clientes. O objetivo é estimular o alcance de metas, como aumento de vendas, engajamento ou lealdade, por meio de recompensas, como prêmios, bônus ou descontos. Essas campanhas visam aumentar a performance ou o engajamento com a marca de forma motivadora e recompensadora.',
+      text: 'Estratégia de marketing ou vendas criada para motivar e recompensar comportamentos específicos de um público-alvo como: funcionários, vendedores ou clientes. O objetivo é estimular o alcance de metas, com aumento de vendas, engajamento ou lealdade, por meio de recompensas de prêmios, bônus ou descontos. Essas campanhas visam aumentar a performance ou o engajamento com a marca de forma motivadora e recompensadora.',
     },
     {
       imageBg: campaignsIncentv.src,
@@ -29,7 +29,7 @@ export default function Service() {
     {
       imageBg: campaignsPromotion.src,
       title: 'Campanha promocional',
-      text: 'Voltada para promover um produto, serviço ou marca, com o objetivo de aumentar as vendas, atrair novos clientes ou fidelizar os já existentes. Essas ações envolvem ofertas especiais, descontos, brindes ou outras vantagens temporárias para estimular a compra ou o consumo do seu produto ou serviço.',
+      text: 'Voltada para promover um produto, serviço ou marca, com o objetivo de aumentar as vendas, fidelizar clientes e atrair novos leads.Essas ações envolvem ofertas especiais, descontos, brindes ou outras vantagens temporárias para estimular a compra ou o consumo do seu produto ou serviço.',
     },
     {
       imageBg: coffeeBreak.src,

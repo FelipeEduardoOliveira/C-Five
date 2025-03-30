@@ -61,7 +61,6 @@ export default function Home() {
           prática para criar uma agência focada em resultados reais.
         </p>
 
-        <br />
         <p className="text-2xl text-center md:text-start font-bold">
           Vamos juntos criar o próximo grande momento!
         </p>

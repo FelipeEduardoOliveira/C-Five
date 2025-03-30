@@ -33,17 +33,17 @@ export const cardsObjects: ICard[] = [
   {
     imageBg: coffeeBreak.src,
     title: 'Coffee Break',
-    text: 'Na CFive, além de soluções criativas em marketing, também oferecemos coffee break corporativo para tornar seus eventos ainda mais especiais. Trabalhamos com opções personalizadas de snacks, bebidas e comidas leves, garantindo qualidade e sabor em cada detalhe.  Ideal para reuniões, treinamentos e convenções, nosso serviço facilita o networking, melhora a produtividade e oferece uma experiência agradável para todos. Conte com a CFive para cuidar do coffee break do seu evento com pontualidade e atenção aos detalhes!',
+    text: '<p>Na CFive, além de soluções criativas em marketing, também oferecemos coffee break corporativo para tornar seus eventos ainda mais especiais.</p> <p>Trabalhamos com opções personalizadas de snacks, bebidas e comidas leves, garantindo qualidade e sabor em cada detalhe.  Ideal para reuniões, treinamentos e convenções, nosso serviço facilita o networking, melhora a produtividade e oferece uma experiência agradável para todos.</p> <p>Conte com a CFive para cuidar do coffee break do seu evento com pontualidade e atenção aos detalhes!</p>',
   },
   {
     imageBg: promotor.src,
     title: 'Promotor',
-    text: 'Na CFive oferecemos um Serviço de Contratação de Promotores, profissionais qualificados que ajudam a sua marca a se destacar em eventos, feiras e campanhas promocionais. O que fazemos: Recrutamento e seleção de promotores alinhados com a sua marca. Treinamento especializado para garantir excelência no atendimento e representação da sua marca. Acompanhamento e relatórios para medir os resultados e impacto da ação. Os promotores ajudam a aumentar o engajamento, gerar conversões de vendas e criar experiências personalizadas para seus consumidores, fortalecendo a imagem da sua marca de forma eficiente.',
+    text: '<p>Na CFive oferecemos um Serviço de Contratação de Promotores, profissionais qualificados que ajudam a sua marca a se destacar em eventos, feiras e campanhas promocionais.</p>  <p>Fazemos:</p>  <ul style="list-style-type: disc; margin-left: 20px;">    <li style="margin-bottom: 8px;"><span style="font-weight: 500;">Recrutamento e seleção de promotores alinhados com a sua marca.</span></li>    <li style="margin-bottom: 8px;"><span style="font-weight: 500;">Treinamento especializado para garantir excelência no atendimento e representação da sua marca.</span></li>    <li><span style="font-weight: 500;">Acompanhamento e relatórios para medir os resultados e impacto da ação.</span></li>  </ul>',
   },
   {
     imageBg: staff.src,
     title: 'Staff',
-    text: 'É o grupo de profissionais responsáveis pela organização, execução e suporte durante um evento. Eles desempenham funções variadas, como recepção de convidados, apoio logístico, controle de acessos, montagem de infraestrutura, atendimento ao público e coordenação das atividades. O objetivo do staff é garantir que o seu evento aconteça de forma organizada e sem imprevistos, proporcionando uma experiência positiva aos participantes.',
+    text: '<p>É o grupo de profissionais responsáveis pela organização, execução e suporte durante um evento. Eles desempenham funções variadas; recepção de convidados; apoio logístico; controle de acessos; montagem de infraestrutura; atendimento ao público e coordenação das atividades.</p> <p>O objetivo do staff é garantir que o seu evento aconteça de forma organizada e sem imprevistos, proporcionando uma experiência positiva aos participantes.</p>',
   },
   {
     imageBg: blitz.src,

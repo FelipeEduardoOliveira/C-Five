@@ -13,10 +13,7 @@ export async function POST(req: Request) {
 
     const response = await resend.emails.send({
       from: 'C-five <no-reply@cfive.com.br>',
-      to: [
-        'felipe.unifieo@gmail.com',
-        // 'Carolynenascimento0216@gmail.com'
-      ],
+      to: ['contato@cfive.com.br'],
       subject: '📩 Nova mensagem do site',
       html: emailHtml,
     });

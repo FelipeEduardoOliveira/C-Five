@@ -1,13 +1,4 @@
-import { Metadata } from 'next';
 import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: {
-    default: 'C-five',
-    template: '%s | C-five',
-  },
-  description: 'C-five, Eventos marcantes, marcas inesquecíveis!',
-};
 
 export default function SiteMap() {
   return (

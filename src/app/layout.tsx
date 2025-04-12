@@ -16,8 +16,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'C-five',
-  description: 'C-five, bringing advertising and technology together.',
+  title: {
+    default: 'C-five',
+    template: '%s | C-five',
+  },
+  description: 'C-five, Eventos marcantes, marcas inesquecíveis!',
 };
 
 export default function RootLayout({

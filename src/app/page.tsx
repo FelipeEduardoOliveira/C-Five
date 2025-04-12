@@ -35,10 +35,7 @@ export default function Home() {
     <div className="">
       <CentralSection />
 
-      <ScrollServices
-        cardsObjects={cardDestaque}
-        title="Destaques"
-      />
+      <ScrollServices cardsObjects={cardDestaque} title="Destaques" />
     </div>
   );
 }

@@ -4,6 +4,15 @@ import React from 'react';
 import { Formik, Field, Form } from 'formik';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import { object, string } from 'yup';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    default: 'C-five',
+    template: '%s | C-five',
+  },
+  description: 'C-five, Eventos marcantes, marcas inesquecíveis!',
+};
 
 export default function Contatos() {
   const initialValues = {

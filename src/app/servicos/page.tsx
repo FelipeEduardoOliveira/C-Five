@@ -1,6 +1,15 @@
 'use client';
 import ServiceCards from '@/Components/ServiceCards';
 import { cardsObjects } from '@/helper/cardsObjects';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    default: 'C-five',
+    template: '%s | C-five',
+  },
+  description: 'C-five, Eventos marcantes, marcas inesquecíveis!',
+};
 
 export default function Service() {
   return (
